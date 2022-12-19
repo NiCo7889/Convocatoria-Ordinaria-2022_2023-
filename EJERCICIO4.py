@@ -33,6 +33,25 @@ Ejemplos:
 from ast import main 
 
 def do_math(string):
+    numeros = string.split(" ")
+    numeros_1 = []
+    letras = []
+    for i in numeros:
+        numeros_1.append(int(i[:-1]))
+        letras.append(i[-1])
+    numeros_1.sort()
+    numeros = []
+    for i in range(len(numeros_1)):
+        numeros.append(numeros_1[i] + letras[i])
+    
+    cadena = ''
+    for i in numeros:
+        cadena += i + ' '
+        return cadena
+
+print(do_math("24z6 1x23 y369 89a 900b"))
+
+
 
 if __name__ == '__main__':
     main()
