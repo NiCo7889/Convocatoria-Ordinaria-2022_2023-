@@ -38,7 +38,7 @@ def simplify(poly):
     poly = [x for x in poly if x != ' ']
     return poly
 
-print(simplify("3x-zx+2xy-x"))
+print(simplify("5x+3x-2xz+4x-3xy+2x-5x+2xzy"))
 
 if __name__ == '__main__':
     main()

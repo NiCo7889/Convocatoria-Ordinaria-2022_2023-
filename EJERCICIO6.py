@@ -48,7 +48,7 @@ def shrek_cuerda(diametro, porcentaje):
     circunferencia = 2 * math.pi * radio
     return circunferencia
 
-print(shrek_cuerda(10, 0.5))
+print(shrek_cuerda(6, 6))
 
 
 if __name__ == '__main__':

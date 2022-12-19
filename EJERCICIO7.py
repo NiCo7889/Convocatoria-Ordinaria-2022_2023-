@@ -23,7 +23,7 @@ Para obtener información sobre la notación algebraica, consulte https://en.wik
 from ast import main 
 
 def knight(pos1, pos2):
-    # your code here
+    
     pass
 
 

@@ -78,7 +78,7 @@ def hollow_triangle(height):
 
     return triangle
 
-print(hollow_triangle(9))
+print(hollow_triangle(8))
 
 
 if __name__ == '__main__':

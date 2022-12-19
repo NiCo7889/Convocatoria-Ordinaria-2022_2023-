@@ -16,15 +16,15 @@ from ast import main
 import re
 
 def is_nessie(text):
-    # your code here
-    pass
+    text = text.lower()
+    mounstruo = r"(tree fiddy|3.50|three fifty)"
+    match= re.search(mounstruo, text)
+    if match:
+        return "Es el monstruo del lago Ness"
+    return "No es el monstruo del lago Ness"
+ 
 
+print(is_nessie("hola mundo, 3.50"))
 
 if __name__ == '__main__':
     main()
-
-
-# def is_nessie(text):
-#     # your code here
-#     return re.search(r"tree fiddy|3.50|three fifty", text, re.IGNORECASE) != None
-
