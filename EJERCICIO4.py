@@ -51,7 +51,5 @@ def do_math(string):
 
 print(do_math("24z6 1x23 y369 89a 900b"))
 
-
-
 if __name__ == '__main__':
     main()

@@ -107,6 +107,8 @@ En la tupla, debe usar 0 para un cuadrado vacío y 1 para un cuadrado lleno. Por
  (0, 1, 1, 1, 1))
 """
 
+from ast import main
+
 class Nonogram:
     
         def __init__(self, clues):
@@ -353,3 +355,6 @@ class Nonogram:
                         self.nonograma[len(self.columnas[i])-j-1][i] = 1
 
                 
+
+if __name__ == '__main__':
+    main()
