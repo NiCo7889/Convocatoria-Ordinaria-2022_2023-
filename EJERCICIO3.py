@@ -48,12 +48,29 @@ print(numbersOfLetters(60))
 
 num = str(60)
 for i in range(len(num)):
-    if num[i] ==
+    if num[i] == "0":
+        num = "zero" + num[i+1:]
+    elif num[i] == "1":
+        num = "one" + num[i+1:]
+    elif num[i] == "2":
+        num = "two" + num[i+1:]
+    elif num[i] == "3":
+        num = "three" + num[i+1:]
+    elif num[i] == "4":
+        num = "four" + num[i+1:]
+    elif num[i] == "5":
+        num = "five" + num[i+1:]
+    elif num[i] == "6":
+        num = "six" + num[i+1:]
+    elif num[i] == "7":
+        num = "seven" + num[i+1:]
+    elif num[i] == "8":
+        num = "eight" + num[i+1:]
+    elif num[i] == "9":
+        num = "nine" + num[i+1:]
+print(num)
 
-
-            
-
-print(numbersOfLetters(1))
+print(numbersOfLetters(7))
 
 if __name__=="__main__":
     main()

@@ -33,9 +33,6 @@ Ejemplos:
 from ast import main 
 
 def do_math(string):
-    # your code here
-    pass
-
 
 if __name__ == '__main__':
     main()

@@ -30,9 +30,15 @@ la cadena de entrada puede contener variables arbitrarias representadas por cara
 from ast import main
 
 def simplify(poly):
-    # your code here
+    poly = poly.replace('-', '+-')
+    poly = poly.split('+')
+    poly = [x for x in poly if x != '']
+    poly = [x for x in poly if x != '+']
+    poly = [x for x in poly if x != '-']
+    poly = [x for x in poly if x != ' ']
     return poly
 
+print(simplify("3x-zx+2xy-x"))
 
 if __name__ == '__main__':
     main()
