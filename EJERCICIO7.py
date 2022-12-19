@@ -21,9 +21,11 @@ Para obtener información sobre la notación algebraica, consulte https://en.wik
 """
 
 from ast import main 
+import numpy as np
+
+tablero = np.zeros((8, 8))
 
 def knight(pos1, pos2):
-    
     pass
 
 

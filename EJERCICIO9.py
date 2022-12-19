@@ -16,9 +16,29 @@ Si la persona está en edad de trabajar, devolver el número de lunes calculado 
 """
 from ast import main 
 
-def unlucky_days(birthday):
-    # your code here
-    pass
+def contador_lunes(cumple, actual):
+    dias = actual - cumple
+    semanas = dias.days // 7
+    lunes = semanas + 1
+    return lunes
+
+from datetime import date
+
+def unlucky_days(birthday, current_date):
+    #calcular la diferencia en años entre la fecha actual y la fecha de cumpleaños de la persona.
+    edad = current_date.year- birthday.year
+    # ver si la persona está en edad de trabajar
+    if edad >= 18 and edad <= 75:
+        #calcular el número de lunes que hay entre la fecha de cumpleaños y la fecha actual
+        lunes = contador_lunes(birthday, current_date)
+        return lunes
+    else:
+        return 0
+
+print(unlucky_days(date(2012, 4, 4), date(2015, 2, 1)))
+
+
+
 
 if __name__ == '__main__':
     main()
