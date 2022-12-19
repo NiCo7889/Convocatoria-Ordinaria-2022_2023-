@@ -178,11 +178,7 @@ class Nonogram:
             self.rellenar57()
             self.rellenar58()
             self.rellenar59()
-            self.rellenar
-
-
-
-
+            self.rellenar60()
             return self.nonograma
 
         def rellenar(self):
@@ -355,3 +351,5 @@ class Nonogram:
                         self.nonograma[len(self.columnas[i])-j-1][i] = 1
                     for j in range(self.columnas[i][11]):
                         self.nonograma[len(self.columnas[i])-j-1][i] = 1
+
+                

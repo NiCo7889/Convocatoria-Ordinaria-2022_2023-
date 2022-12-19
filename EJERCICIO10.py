@@ -33,52 +33,19 @@ Para implementar una función que calcule la secuencia de Xbonacci dado un núme
 
 """
 from ast import main
-import sys
 
-def fibonacci_iterative(n:int)->int:
-    sys.set_int_max_str_digits(2000000)
-    if n<0:
-        raise ValueError("Cannot have a negative term!")
-
-    if n==0 or n==1:
-        return n
-
-    n_1 = 1
-    n_2 = 1
-    output_n = 1
-    for _ in range(n-2):
-        output_n = n_1 + n_2
-        n_2 = n_1
-        n_1 = output_n
-
-    return output_n
-
-print(fibonacci_iterative(1000000))
-
-if __name__ == "__main__":
-    print(fibonacci_iterative(2000000))
 def xbonacci(signature, n):
+    #your code here
+    if n == 0:
+        return []
+    elif n < len(signature):
+        return signature[:n]
+    else:
+        for i in range(n - len(signature)):
+            signature.append(sum(signature[-len(signature):]))
+        return signature
 
-
-def fibonacci_iterative(n:int)->int:
-    sys.set_int_max_str_digits(2000000)
-    if n<0:
-        raise ValueError("Cannot have a negative term!")
-
-    if n==0 or n==1:
-        return n
-
-    n_1 = 1
-    n_2 = 1
-    output_n = 1
-    for _ in range(n-2):
-        output_n = n_1 + n_2
-        n_2 = n_1
-        n_1 = output_n
-
-    return output_n
-
-print(fibonacci_iterative(1000000))
+print(xbonacci([1,1,1,1],55))
 
 if __name__ == "__main__":
-    print(fibonacci_iterative(2000000))
+    main()
