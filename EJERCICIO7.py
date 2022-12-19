@@ -19,3 +19,13 @@ Para obtener información sobre la notación algebraica, consulte https://en.wik
 
 (Advertencia: muchas de las pruebas se generaron aleatoriamente. Si alguna no funciona, los casos de prueba devolverán la entrada, la salida y la salida esperada; publíquelos).
 """
+
+from ast import main 
+
+def knight(pos1, pos2):
+    # your code here
+    pass
+
+
+if __name__ == '__main__':
+    main()

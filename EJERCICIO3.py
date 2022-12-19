@@ -18,9 +18,42 @@ numbersOfLetters(1) --> ["one", "three", "five", "four"]
 from ast import main
 
 def numbersOfLetters(n):
-    
+    if n<0 or n>999:
+        raise ValueError("Este valos no vale para este ejercicio, El numero tiene que estar en 0 y 999.")
+    n = str(n)
+    for i in range(len(n)):
+       if n[i] == 0:
+        n= "zero" + n[i+1:]
+       elif n[i] == 1:
+        n= "one" + n[i+1:]
+       elif n[i] == 2:
+        n= "two" + n[i+1:]
+       elif n[i] == 3:
+        n= "three" + n[i+1:]
+       elif n[i] == 4:
+        n= "four" + n[i+1:]
+       elif n[i] == 5:
+        n= "five" + nnum[i+1:]
+       elif n[i] == 6:
+        n= "six" + n[i+1:]
+       elif n[i] == 7:
+        n= "seven" + n[i+1:]
+       elif n[i] == 8:
+        n= "eight" + n[i+1:]
+       elif n[i] == 9:
+        n= "nine" + n[i+1:]
+    return n
+
+print(numbersOfLetters(60))
+
+num = str(60)
+for i in range(len(num)):
+    if num[i] ==
 
 
+            
+
+print(numbersOfLetters(1))
 
 if __name__=="__main__":
     main()

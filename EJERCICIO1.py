@@ -183,9 +183,6 @@ class Nonogram:
 
 
 
-
-
-
             return self.nonograma
 
         def rellenar(self):
@@ -311,4 +308,50 @@ class Nonogram:
                     for j in range(self.columnas[i][9]):
                         self.nonograma[len(self.columnas[i])-j-1][i] = 1
                 elif len(self.columnas[i]) == 11:
-                    
+                    for j in range(self.columnas[i][0]):
+                        self.nonograma[j][i] = 1
+                    for j in range(self.columnas[i][1]):
+                        self.nonograma[len(self.columnas[i])-j-1][i] = 1
+                    for j in range(self.columnas[i][2]):
+                        self.nonograma[len(self.columnas[i])-j-1][i] = 1
+                    for j in range(self.columnas[i][3]):
+                        self.nonograma[len(self.columnas[i])-j-1][i] = 1
+                    for j in range(self.columnas[i][4]):
+                        self.nonograma[len(self.columnas[i])-j-1][i] = 1
+                    for j in range(self.columnas[i][5]):
+                        self.nonograma[len(self.columnas[i])-j-1][i] = 1
+                    for j in range(self.columnas[i][6]):
+                        self.nonograma[len(self.columnas[i])-j-1][i] = 1
+                    for j in range(self.columnas[i][7]):
+                        self.nonograma[len(self.columnas[i])-j-1][i] = 1
+                    for j in range(self.columnas[i][8]):
+                        self.nonograma[len(self.columnas[i])-j-1][i] = 1
+                    for j in range(self.columnas[i][9]):
+                        self.nonograma[len(self.columnas[i])-j-1][i] = 1
+                    for j in range(self.columnas[i][10]):
+                        self.nonograma[len(self.columnas[i])-j-1][i] = 1
+                elif len(self.columnas[i]) == 12:
+                    for j in range(self.columnas[i][0]):
+                        self.nonograma[j][i] = 1
+                    for j in range(self.columnas[i][1]):
+                        self.nonograma[len(self.columnas[i])-j-1][i] = 1
+                    for j in range(self.columnas[i][2]):
+                        self.nonograma[len(self.columnas[i])-j-1][i] = 1
+                    for j in range(self.columnas[i][3]):
+                        self.nonograma[len(self.columnas[i])-j-1][i] = 1
+                    for j in range(self.columnas[i][4]):
+                        self.nonograma[len(self.columnas[i])-j-1][i] = 1
+                    for j in range(self.columnas[i][5]):
+                        self.nonograma[len(self.columnas[i])-j-1][i] = 1
+                    for j in range(self.columnas[i][6]):
+                        self.nonograma[len(self.columnas[i])-j-1][i] = 1
+                    for j in range(self.columnas[i][7]):
+                        self.nonograma[len(self.columnas[i])-j-1][i] = 1
+                    for j in range(self.columnas[i][8]):
+                        self.nonograma[len(self.columnas[i])-j-1][i] = 1
+                    for j in range(self.columnas[i][9]):
+                        self.nonograma[len(self.columnas[i])-j-1][i] = 1
+                    for j in range(self.columnas[i][10]):
+                        self.nonograma[len(self.columnas[i])-j-1][i] = 1
+                    for j in range(self.columnas[i][11]):
+                        self.nonograma[len(self.columnas[i])-j-1][i] = 1

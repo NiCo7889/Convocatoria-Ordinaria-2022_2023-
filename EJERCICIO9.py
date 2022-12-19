@@ -14,3 +14,11 @@ Verificar si la persona está en edad de trabajar. Para ello, se puede comprobar
 Calcular el número de lunes que hay entre la fecha de cumpleaños y la fecha actual. Para ello, se puede calcular el número de días que hay entre ambas fechas y dividirlo por 7, ya que una semana tiene 7 días.
 Si la persona está en edad de trabajar, devolver el número de lunes calculado en el paso 3. En caso contrario, devolver 0.
 """
+from ast import main 
+
+def unlucky_days(birthday):
+    # your code here
+    pass
+
+if __name__ == '__main__':
+    main()

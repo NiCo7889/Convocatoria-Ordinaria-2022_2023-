@@ -11,3 +11,20 @@ La mejor forma de detectar a Monstruo del Lago Ness es utilizando una expresión
 
 Para ello, se puede usar el módulo re y su función search(), que buscará la primera coincidencia en la cadena de texto.
 """
+
+from ast import main 
+import re
+
+def is_nessie(text):
+    # your code here
+    pass
+
+
+if __name__ == '__main__':
+    main()
+
+
+# def is_nessie(text):
+#     # your code here
+#     return re.search(r"tree fiddy|3.50|three fifty", text, re.IGNORECASE) != None
+

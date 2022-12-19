@@ -59,3 +59,27 @@ _#_____________#_        8
 
 Rellene los espacios con guiones bajos, es decir, _ para que cada línea tenga la misma longitud. ¡Buena suerte y diviértase codificando!
 """
+
+from ast import main 
+
+def hollow_triangle(height):
+
+    if height == 0:
+        return []
+    if height == 1:
+        return ["#"]
+    if height == 2:
+        return ["_##_", "#_#"]
+
+    triangle = ["_" * (2 * height - 1)]
+    for i in range(1, height - 1):
+        triangle.append("_" * (height - i - 1) + "#" + "_" * (2 * i - 1) + "#" + "_" * (height - i - 1))
+    triangle.append("#" * (2 * height - 1))
+
+    return triangle
+
+print(hollow_triangle(9))
+
+
+if __name__ == '__main__':
+    main()

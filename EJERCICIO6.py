@@ -37,3 +37,19 @@ Circunferencia = 2 * pi * radio
 
 Cuidado: en Fairy Land, ¡los parches de hierba pueden crecer mucho!
 """
+
+from ast import main 
+import math
+
+def shrek_cuerda(diametro, porcentaje):
+    radio = diametro / 2
+    area = math.pi * radio ** 2
+    area_protegida = area * porcentaje
+    circunferencia = 2 * math.pi * radio
+    return circunferencia
+
+print(shrek_cuerda(10, 0.5))
+
+
+if __name__ == '__main__':
+    main()
